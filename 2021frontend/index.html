@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eSurance</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="index.html">e<span>Surance</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+                <ul class="primary-nav">
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li><a href="#">Contact</a></li>
+                    <li class="go-premium-cta"><a href="#">Go Premium</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-column">
+                <p class="subhead">Insurance for Gamers!</p>
+                <h1>Protecting the eSports Industry</h1>
+
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Try for free</a>
+                    <a href="#" class="watch-video-cta">
+                        <img src="images/watch.svg" alt="Watch a video">Watch a video
+                    </a>
+                </div>
+            </div>
+
+            <img src="images/illustration.svg" class="hero-img" alt="illustration">
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <li>eSport Team Insurance</li>
+                <li>Event Cancellations</li>
+                <li>Liabilities at Events</li>
+                <li>Gaming Property Insurance</li>
+                <li>CyberSecurity Insurance</li>
+                <li>Other Awesome Features</li>
+            </ul>
+
+            <img src="images/holding-phone.jpg" alt="Man holding phone">
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/person.jpg" alt="Person">
+
+                    <blockquote>"Would 100% recommend"</blockquote>
+                    <cite>- Chris Watkins</cite>
+                </li>
+                <li>
+                    <img src="images/guy.jpg" alt="Person">
+
+                    <blockquote>"These guys helped insure my property that nobody else would offer!"</blockquote>
+                    <cite>- Matthew Klimek</cite>
+                </li>
+                <li>
+                    <img src="images/girl.jpg" alt="Person">
+
+                    <blockquote>"Saved my life!"</blockquote>
+                    <cite>- Maggie Waters</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h2>Contact</h2>
+
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                    <input type="submit" class="send-message-cta" value="Send message">
+                </form>
+            </div>
+            <div class="contact-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112960.07325992662!2d-82.72486042376883!3d27.77890363003502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2e663693aaa41%3A0x4cc4003bcd48bff!2sSt.%20Petersburg%2C%20FL!5e0!3m2!1sen!2sus!4v1643339477568!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+            nav = document.querySelector('nav')
+            mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+    </script>
+
+</body>
+</html>
